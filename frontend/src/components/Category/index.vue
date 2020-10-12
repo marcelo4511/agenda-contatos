@@ -29,8 +29,8 @@
           <td>{{category.name}}</td>
           <td>{{category.status}}</td>
           <td>              
-            <router-link :to="{name:'category-edit',params:{id:category.id}}" tag="button" class="btn btn-warning"><i class="fa fa-pencil"></i></router-link>
-            <button @click="removeCategory(category)" class="btn btn-danger ml-2"><i class="fa fa-trash"></i></button>
+            <router-link :to="{name:'category-edit',params:{id:category.id}}" tag="button" title="Editar" class="btn btn-warning"><i class="fa fa-pencil"></i></router-link>
+            <button @click="removeCategory(category)" title="Deletar" class="btn btn-danger ml-2"><i class="fa fa-trash"></i></button>
           </td>    
         </tr>
       </tbody>

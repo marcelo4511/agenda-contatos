@@ -14,7 +14,7 @@ const REMOVE_CATEGORY = (state, category) => {
 }
 
 const UPDATE_CATEGORY = (state,category) => {
-     state.categories.forEach(cat => cat.id === category.id)
+     state.categories.find(cat => cat.id === category.id)
            
 }
 export default{

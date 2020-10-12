@@ -25,8 +25,8 @@ const removeCategory = ({commit}, category) => {
 }
 const updateCategory = async( { commit }, category) => {
      await axios.put(`http://127.0.0.1:8000/api/categories/${category.id}`,category)
-     .then(() =>{
-         
+     .then((res) =>{
+         console.log(res.data)
      })
     commit('UPDATE_CATEGORY', category);
 }

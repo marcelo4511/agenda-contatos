@@ -25,8 +25,9 @@ const removeContactBook = ({commit}, ContactBook) => {
 }
 const updateContactBook = async( { commit }, ContactBook) => {
      await axios.put(`http://127.0.0.1:8000/api/contactbooks/${ContactBook.id}`,ContactBook)
-     .then(() =>{
-     })
+     .then((res) =>{
+        console.log(res.data)
+    })
     commit('UPDATE_CONTACTBOOK', ContactBook);
 }
 

@@ -14,7 +14,7 @@ const REMOVE_CONTACTBOOK = (state, contactbook) => {
 }
 
 const UPDATE_CONTACTBOOK = (state,contactbook) => {
-     state.contactbooks.forEach(contact => contact.id === contactbook.id)
+     state.contactbooks.find(contact => contact.id === contactbook.id)
            
 }
 export default{

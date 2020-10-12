@@ -14,7 +14,7 @@ class CreateContactbooksTable extends Migration
     public function up()
     {
         Schema::create('contactbooks', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('name');
             $table->string('phone');
             $table->string('city');
