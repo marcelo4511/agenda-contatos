@@ -11,7 +11,7 @@
     <div class="form-group">
       <router-link class="btn btn-primary" tag="button" to="/category-create">Cadastrar</router-link>
     
-      <input class="form-control col-md-3 mb-3" type="search" style="float: right;" name="nome" placeholder="Buscar" v-model="search">
+      <input class="form-control col-md-3 mb-3" type="search" style="float: right;" name="nome" placeholder="Pesquisar" v-model="search">
 
     </div>
 

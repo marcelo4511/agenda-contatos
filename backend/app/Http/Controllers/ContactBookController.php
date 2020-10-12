@@ -34,7 +34,7 @@ class ContactBookController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store( Request $request)
+    public function store(Request $request)
     {
 
         $contactbook = new ContactBook();
@@ -94,7 +94,6 @@ class ContactBookController extends Controller
         }catch(\Exception $e) {
             return response()->json($e,401);
         }
-        return response()->json($contactbook);
     }
 
     /**

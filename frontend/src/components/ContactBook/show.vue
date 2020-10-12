@@ -12,9 +12,11 @@
     <div class="card">
         <h5 class="card-header"><i class="fa fa-user"></i> {{contactbook.name}}</h5>
         <div class="card-body">
-            <h5 class="card-title">Categoria: {{contactbook.categories.name}}</h5>
-            <p class="card-text"><i class=" fa fa-city">Cidade: {{contactbook.city}}</i></p>
-            <p class="card-text"><i class=" fa fa-phone"></i>  {{contactbook.phone}}</p>
+            <h5 class="card-text"><i class="fa fa-folder"></i>Categoria: {{contactbook.categories.name}}</h5>
+            <h5 class="card-text"><i class="fa fa-map-marker"></i> Cidade: {{contactbook.city}}</h5>
+            <h5 class="card-text"><i class=" fa fa-phone"></i>  telefone: {{contactbook.phone}}</h5><br>
+            <p class="card-text">  Observação: {{contactbook.observations}}</p>
+            
         </div>
     </div>
 </div>

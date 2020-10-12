@@ -24,7 +24,7 @@ class CategoryController extends Controller
         return response()->json($category);
     }
 
-    public function store( Request $request)
+    public function store(Request $request)
     {
 
         $category = new Category();
@@ -51,13 +51,11 @@ class CategoryController extends Controller
         }catch(\Exception $e) {
             return response()->json($e,401);
         }
-        return response()->json($category);
     }
 
     public function destroy($id)
     {
         Category::where('id', $id)->delete();
-
         return response()->json(['data' => ['msg' => 'Categoria removida com sucesso']]);
     }
 }

@@ -38,7 +38,6 @@
   </div>
 </div>
 
-  <router-link to="/categories" tag="span"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i>voltar</router-link>
 </div>
 </template>
 
